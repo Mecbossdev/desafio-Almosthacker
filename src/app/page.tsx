@@ -1,10 +1,9 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import TableList from "@/components/table-list";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      
+    <main>
+      <TableList />
     </main>
   );
 }
