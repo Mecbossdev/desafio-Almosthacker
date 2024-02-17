@@ -30,74 +30,80 @@ export const users = [
   },
   {
     id: 7,
-    user: "Dimitri Payet"
+    user: "Pedro Cardoso"
   },
   {
     id: 8,
-    user: "Dimitri Payet"
+    user: "Pedro Matheus"
   },
   {
     id: 9,
-    user: "Dimitri Payet"
+    user: "Jeferson Marques"
   },
   {
     id: 10,
-    user: "Dimitri Payet"
+    user: "Matheus Ponte"
   },
   {
     id: 11,
-    user: "Dimitri Payet"
+    user: "Pedro Italo"
   },
   {
     id: 12,
-    user: "Dimitri Payet"
+    user: "Tatiana Fernandes"
   },
   {
     id: 13,
-    user: "Jeferson Fernandes"
+    user: "Jessica Garcia"
   },
   {
     id: 14,
-    user: "Yuri Moura"
+    user: "Pedro Souza"
   },
   {
     id: 15,
-    user: "Michael Nascimento"
+    user: "Michel Soarez"
   },
   {
     id: 16,
-    user: "Roberto Silva"
+    user: "Raimundo Nonato"
   },
   {
     id: 17,
-    user: "Pablo Vegetti"
+    user: "Matheus Fontinele"
   },
   {
     id: 18,
-    user: "Dimitri Payet"
+    user: "Leonardo Jardim"
   },
   {
     id: 19,
-    user: "Dimitri Payet"
+    user: "Miguel joaquin"
   },
   {
     id: 20,
-    user: "Dimitri Payet"
+    user: "Thais Ventura"
   },
   {
     id: 21,
-    user: "Dimitri Payet"
+    user: "Yara Joyce"
   },
   {
     id: 22,
-    user: "Dimitri Payet"
+    user: "Pablo Ian"
   },
   {
     id: 23,
-    user: "Dimitri Payet"
+    user: "Jociene Garcia"
   },
   {
     id: 24,
-    user: "Dimitri Payet"
+    user: "David Nascimento"
+  },
+  {
+    id: 25,
+    user: "Luiz Jorge"
   }
+
+  
 ]

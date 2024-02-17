@@ -1,47 +1,43 @@
-'use client'
-
-import { users } from '@/data/fake-user';
+import { users, usersProps } from '@/data/fake-user';
 import {
   Table,
   Thead,
   Tbody,
-  Tfoot,
   Tr,
   Th,
   Td,
   TableCaption,
   TableContainer,
+  Container,
 } from '@chakra-ui/react'
-import { useState } from 'react';
 
 export interface ITableListProps {
+  currentItens: usersProps[];
 }
 
-export default function TableList (props: ITableListProps) {
+export default function TableList ({currentItens}: ITableListProps) {
 
 
   return (
-    <TableContainer>
-      <Table variant='simple'>
-        <TableCaption>Imperial to metric conversion factors</TableCaption>
-        <Thead>
-          <Tr>
-            <Th>Usuarios</Th>
-          </Tr>
-        </Thead>
-        <Tbody>
-          {users.map((data) => (
-            <Tr key={data.id}>
-              <Td>{data.user}</Td>
-            </Tr>            
-          ))}
-        </Tbody>
-        <Tfoot>
-          <Tr>
-            <Th>To convert</Th>
-          </Tr>
-        </Tfoot>
-      </Table>
-    </TableContainer>
+    <Container padding='4' maxW='1200px' bg='gray.300' color='#262626' >
+      <TableContainer>
+        <Table variant='simple'>
+          <TableCaption>Páginas do Usuários</TableCaption>
+          <Thead>
+            <Tr>
+              <Th>Usuários</Th>
+            </Tr>
+          </Thead>
+          <Tbody>
+            {currentItens.map((data) => (
+              <Tr key={data.id}>
+                <Td>{data.user}</Td>
+              </Tr>            
+            ))}
+          </Tbody>
+        </Table>
+      </TableContainer>
+    </Container>
+
   );
 }
