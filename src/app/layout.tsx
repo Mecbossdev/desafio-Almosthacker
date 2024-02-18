@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={dm_sans.className}>
         <DefaultProviders>
-          <Flex alignItems='center'>
+          <Flex minH='100vh' flexDirection='column' bgColor='#F2F4F7' >
             {children}
           </Flex>
         </DefaultProviders> 

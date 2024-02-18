@@ -17,8 +17,8 @@ export interface ITableListProps {
 export default function TableList ({currentItens}: ITableListProps) {
 
   return (
-    <TableContainer>
-      <Table variant='simple'>
+    <TableContainer mt='20px'>
+      <Table size='sm'>
         <TableCaption>Páginas do Usuários</TableCaption>
         <Thead>
           <Tr>

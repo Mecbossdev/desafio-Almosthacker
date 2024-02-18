@@ -1,9 +1,10 @@
 'use client'
+import { InputComponent } from "@/components/input-component";
 import Pagination from "@/components/pagination-component";
 import { SelectedComponent } from "@/components/select-filter";
 import TableList from "@/components/table-list";
 import { users } from "@/data/fake-user";
-import { Button, Container, Flex, Input } from "@chakra-ui/react";
+import { Alert, AlertIcon, AlertTitle, Button, Container, Flex } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 
 export default function Home() {
@@ -35,31 +36,42 @@ export default function Home() {
 
   return (
     <Container 
-      padding='4' 
+      p='4' 
       maxW='800px' 
       bg='gray.300' 
-      color='#262626' 
+      bgColor='#D0D5DD' 
       margin='auto' 
-      borderRadius='20px'
+      boxShadow='xl'  
+      rounded='xl'
     >
       <Flex justifyContent='space-between'>
-        <Input 
+        <InputComponent
+          type="text" 
           value={search}
-          paddingRight='4'
           onChange={handleChange}
-          bgColor='white'
+          bgColor='#EDF2F7'
           width='max-content'
           placeholder="Buscar usuários.."
         />
-        <SelectedComponent 
+        <SelectedComponent
+          width="max-content"
+          bgColor="#EDF2F7"
           itensPerPages={itensPerPages}
           setItensPerPages={setItensPerPages}
         />
       </Flex>
 
+      {filteredPosts.length === 0 && (
+        <Alert status='error' mt='20px'>
+          <AlertIcon />
+          <AlertTitle>Não existe usuário com esse nome!</AlertTitle>
+        </Alert>
+      )}
+
       <TableList 
         currentItens={filteredPosts}
       />
+
       <Flex justifyContent='center'>
         <Button
           onClick={(e) => setCurrentPages(currentPages - 1)}

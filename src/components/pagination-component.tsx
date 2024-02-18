@@ -2,7 +2,7 @@ import { Button } from '@chakra-ui/react';
 
 export interface IPaginationProps {
   setCurrentPages: React.Dispatch<React.SetStateAction<number>>;
-  pages: any;
+  pages: number;
 }
 
 export default function Pagination({pages, setCurrentPages}:  IPaginationProps) {
