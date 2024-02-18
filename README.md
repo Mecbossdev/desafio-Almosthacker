@@ -14,7 +14,7 @@
 ![preview](https://github.com/Mecbossdev/desafio-almosthacker/blob/main/public/img/pagina1.png)
 ![preview](https://github.com/Mecbossdev/desafio-almosthacker/blob/main/public/img/pagina2.png)
 
-## Libs/Ferramentas 
+## Libs/Ferramentas ultilizadas
 1. Reactjs
 2. Nextjs
 3. TypeScript
