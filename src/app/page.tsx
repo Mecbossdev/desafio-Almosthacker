@@ -36,26 +36,25 @@ export default function Home() {
 
   return (
     <Container 
-      p='4' 
-      maxW='800px' 
-      bg='gray.300' 
-      bgColor='#D0D5DD' 
+      p='12' 
+      maxW='800px'  
+      bgColor='#98A2B3' 
       margin='auto' 
       boxShadow='xl'  
       rounded='xl'
     >
-      <Flex justifyContent='space-between'>
+      <Flex justifyContent='space-between' border='none'>
         <InputComponent
           type="text" 
           value={search}
           onChange={handleChange}
-          bgColor='#EDF2F7'
+          bgColor='#BAC2CE'
           width='max-content'
           placeholder="Buscar usuários.."
         />
         <SelectedComponent
           width="max-content"
-          bgColor="#EDF2F7"
+          bgColor="#BAC2CE"
           itensPerPages={itensPerPages}
           setItensPerPages={setItensPerPages}
         />

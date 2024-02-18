@@ -19,10 +19,10 @@ export default function TableList ({currentItens}: ITableListProps) {
   return (
     <TableContainer mt='20px'>
       <Table size='sm'>
-        <TableCaption>Páginas do Usuários</TableCaption>
+        <TableCaption fontSize='md'>Páginas do Usuários</TableCaption>
         <Thead>
           <Tr>
-            <Th>Usuários</Th>
+            <Th fontSize='md'>Usuários</Th>
           </Tr>
         </Thead>
         <Tbody>
