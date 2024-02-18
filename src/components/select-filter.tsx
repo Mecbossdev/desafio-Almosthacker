@@ -10,7 +10,6 @@ export function SelectedComponent ({itensPerPages, setItensPerPages}: ISelectedC
   return (
     <div>
       <Select 
-        placeholder='Select option'
         value={itensPerPages}
         onChange={(e) => setItensPerPages(Number(e.target.value))}
       >

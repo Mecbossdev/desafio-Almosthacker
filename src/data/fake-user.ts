@@ -82,7 +82,7 @@ export const users = [
   },
   {
     id: 20,
-    user: "Thais Ventura"
+    user: "Thiago Ventura"
   },
   {
     id: 21,
@@ -104,6 +104,4 @@ export const users = [
     id: 25,
     user: "Luiz Jorge"
   }
-
-  
 ]

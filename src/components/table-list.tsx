@@ -1,4 +1,4 @@
-import { users, usersProps } from '@/data/fake-user';
+import { usersProps } from '@/data/fake-user';
 import {
   Table,
   Thead,
@@ -15,7 +15,6 @@ export interface ITableListProps {
 }
 
 export default function TableList ({currentItens}: ITableListProps) {
-
 
   return (
     <TableContainer>

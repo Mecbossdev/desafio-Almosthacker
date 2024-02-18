@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import { Providers } from "./providers";
+import { DM_Sans } from "next/font/google";
+import DefaultProviders from "@/components/default-providers";
+import { Flex } from "@chakra-ui/react";
 
-const inter = Inter({ subsets: ["latin"] });
+const dm_sans = DM_Sans({ 
+  subsets: ['latin'],
+  weight: '500',
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,10 +20,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Providers>
-          {children}
-        </Providers> 
+      <body className={dm_sans.className}>
+        <DefaultProviders>
+          <Flex alignItems='center'>
+            {children}
+          </Flex>
+        </DefaultProviders> 
       </body>
     </html>
   );
