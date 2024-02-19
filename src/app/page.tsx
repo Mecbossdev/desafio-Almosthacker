@@ -18,7 +18,7 @@ export default function Home() {
   const currentItens = users.slice(startIndex, endIndex)
 
   const filteredPosts = search ?
-  currentItens.filter(item => {
+  users.filter(item => {
     return item.user.toLowerCase().includes(
       search.toLowerCase()
     );
@@ -79,6 +79,7 @@ export default function Home() {
           Anterior
         </Button>
         <Pagination
+          active={pages === currentPages} 
           pages={pages}
           setCurrentPages={setCurrentPages}  
         />
