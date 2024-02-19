@@ -10,7 +10,11 @@
 - Dropdown que permite escolher a quantidade de usuário por página, tendo 10 usuários por padrão.
 - Filtro de usuário por nome.
 
-## Libs/Ferramentas 
+### App Preview:
+![preview](https://github.com/Mecbossdev/desafio-almosthacker/blob/main/public/img/pagina1.png)
+![preview](https://github.com/Mecbossdev/desafio-almosthacker/blob/main/public/img/pagina2.png)
+
+## Libs/Ferramentas ultilizadas
 1. Reactjs
 2. Nextjs
 3. TypeScript
@@ -26,3 +30,4 @@ git clone https://github.com/Mecbossdev/desafio-almosthacker
 npm i
 npm run dev
 ```
+
