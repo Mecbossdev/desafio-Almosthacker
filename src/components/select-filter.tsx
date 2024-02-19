@@ -1,4 +1,4 @@
-import { Flex, Select } from "@chakra-ui/react";
+import { Select } from "@chakra-ui/react";
 import { Dispatch, SetStateAction } from "react";
 
 export interface ISelectedComponentProps {

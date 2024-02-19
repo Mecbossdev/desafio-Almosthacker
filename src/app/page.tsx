@@ -73,18 +73,19 @@ export default function Home() {
 
       <Flex justifyContent='center'>
         <Button
-          onClick={(e) => setCurrentPages(currentPages - 1)}
+          onClick={() => setCurrentPages(currentPages - 1)}
           isDisabled={currentPages === 0}
         >
           Anterior
         </Button>
         <Pagination
-          active={pages === currentPages} 
+          currentPages={currentPages}
           pages={pages}
-          setCurrentPages={setCurrentPages}  
+          setCurrentPages={setCurrentPages}
+          isActive={currentPages === pages}
         />
         <Button
-          onClick={(e) => setCurrentPages(currentPages + 1)}
+          onClick={() => setCurrentPages(currentPages + 1)}
           isDisabled={currentPages === pages - 1}
         >
           Próximo
